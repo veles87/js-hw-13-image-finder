@@ -16,4 +16,4 @@ var t=arguments[3],e="Expected a function",n=NaN,r="[object Symbol]",i=/^\s+|\s+
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./styles.css");var e=t(require("./js/apiService")),r=t(require("./templates/gallery.hbs"));function t(e){return e&&e.__esModule?e:{default:e}}const c=require("lodash.debounce"),n=document.querySelector("#search-form"),o=document.querySelector(".mark"),s="11753469-fae5ae7c0c549b8c5c7373ba2",l=1;let u,a=1;n.addEventListener("submit",e=>{e.preventDefault(),o.innerHTML="";const t={searchWords:u=n.elements.query.value},c=(0,r.default)(t);o.insertAdjacentHTML("beforeend",c),document.querySelector(".btn-load-more").addEventListener("click",e=>{i(e,a)}),d(u),n.reset()});const d=r=>{(0,e.default)(r,1,s)};function i(r,t){console.log("click",r),(0,e.default)(u,t,s),a=t+1,console.log(a)}
 },{"./styles.css":"Tnu0","./js/apiService":"eQwa","./templates/gallery.hbs":"YMFI","lodash.debounce":"PZFh"}]},{},["Focm"], null)
-//# sourceMappingURL=/js-hw-13-image-finder/src.c0d407e7.js.map
+//# sourceMappingURL=/js-hw-13-image-finder/src.be4ada31.js.map
